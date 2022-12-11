@@ -1,4 +1,4 @@
-package com.example.testmp4;
+package com.cz.demo;
 
 import org.junit.Test;
 
