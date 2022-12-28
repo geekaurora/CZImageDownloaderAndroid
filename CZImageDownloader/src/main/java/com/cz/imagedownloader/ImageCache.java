@@ -6,6 +6,19 @@ import android.util.LruCache;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/*
+   Manager of mem cache and disk cache.
+
+   ### Usage
+   ```
+    // 1.Set context for the image downloader.
+    ImageDownloader.shared.context = this.getApplicationContext();
+
+    // 2. Display image with the `imageUrl`.
+    String imageUrl = "https://d37t5b145o82az.cloudfront.net/pictures/14729eb660b3a409368f820a053ac319.jpg";
+    ImageDownloader.shared.displayImage(imageUrl, imageView);
+   ```
+ */
 public class ImageCache {
 
     private LruCache<String, Bitmap> memCache;
